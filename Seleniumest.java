@@ -13,6 +13,12 @@ public class Seleniumest {
 		String title = driver.getTitle();
 		System.out.println(title);
 		
+		if(title.contentEquals("Google")) {
+			System.out.println("Pass");
+		} else {
+			System.out.println("Fail");
+		}
+		
 		
 		driver.close();
 	}
