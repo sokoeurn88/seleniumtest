@@ -47,6 +47,7 @@ public class Seleniumest {
 		
 		// Find element using Relative Xpath
 		WebElement clickElement = driver.findElement(By.xpath("//*[@class='LC20lb MBeuO DKV0Md']"));
+		System.out.println("Element found: " + clickElement.getText()); //get the text of element located.
 		clickElement.click();
 		
 		/* explicit wait*/
