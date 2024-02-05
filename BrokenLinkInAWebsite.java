@@ -18,7 +18,7 @@ public class BrokenLinkInAWebsite {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sokoeurn chhay\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://google.com");
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		driver.getTitle();
 		System.out.println(driver.getCurrentUrl());
 		
@@ -44,6 +44,8 @@ public class BrokenLinkInAWebsite {
 		
 		System.out.println("Links verified completely.");
 		driver.close();
+		
+		
 	}
 
 }
